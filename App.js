@@ -82,7 +82,8 @@ export default function App(){
 			  {
 				  text: 'Sim',
 				  onPress: () => {
-					AsyncStorage.clear()
+					AsyncStorage.removeItem('leftName')
+					AsyncStorage.removeItem('rightName')
 					setLeftTeam('Nós')
 					setRightTeam('Eles')
 				  }
